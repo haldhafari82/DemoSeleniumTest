@@ -19,8 +19,8 @@ public class App  {
   // Optional, if not specified, WebDriver will search your path for chromedriver.
 
 try {
-  System.setProperty("webdriver.chrome.driver", "/home/ec2-user/Downloads/chromedriver");
-
+ // System.setProperty("webdriver.chrome.driver", "/home/ec2-user/Downloads/chromedriver");
+  System.setProperty("webdriver.chrome.driver", "c:\chromedriver\chromedriver.exe");
   WebDriver driver = new ChromeDriver();
   driver.get("http://www.google.com/xhtml");
   Thread.sleep(5000);  // Let the user actually see something!
